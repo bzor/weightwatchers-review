@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<title>Weight Watchers</title>
+		<meta name="ad.size" content="width=970,height=250" />
+		<script>
+			var clickTag = "http://www.google.com";
+			
+			var sw = 970;
+			var sh = 250;
+			var sizeType = sw + "x" + sh;
+
+			var concept = "cookies";
+
+		</script>
+		<style>
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+		html, html a {
+			font-smooth: always;
+			-webkit-font-smoothing: antialiased;
+		}
+		* {
+			-webkit-tap-highlight-color: transparent;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+		}
+		#banner {
+			position: relative;
+			width: 970px;
+			height: 250px;
+			overflow: hidden;
+			opacity: 0;
+		}
+		.fs {
+			position: absolute;
+			background-size: 100% 100%;
+			width: 970px;
+			height: 250px;
+			overflow: hidden;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+		#outline {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 968px;
+			height: 248px;
+			border: 1px #DDD solid;
+		}
+		#bg {
+			background-color: #322da0;
+		}
+
+		#headline {
+			background-image: url(headline.png);
+		}
+		#cta1 {
+			background-image: url(cta1.png);
+		}
+		#cta1-over {
+			background-image: url(cta1-over.png);
+		}
+		#cta2 {
+			background-image: url(cta2.png);
+		}
+		#cta2-over {
+			background-image: url(cta2-over.png);
+		}
+		#logo {
+			background-image: url(logo.png);
+		}
+
+.cookie {
+
+	background-image: url( "cookie.png" );
+
+}
+		</style>
+	</head>
+	<body>
+		<div id="banner">
+		<div id="banner-main">
+			<div class="fs" id="bg"></div>
+
+			<div class="fs " id="bg-color">
+			</div>
+			<div class="fs " id="headline"></div>
+			<div class="fs " id="headline-hold">
+			</div>
+			<div class="fs " id="ctas-hold">
+			</div>
+			<div class="fs " id="cta1-hold">
+			</div>
+			<div class="fs " id="cta2-hold">
+			</div>
+			<div class="fs " id="cta1"></div>
+			<div class="fs " id="cta1-over"></div>
+			<div class="fs " id="cta2"></div>
+			<div class="fs " id="cta2-over"></div>
+			<div class="fs " id="logo"></div>
+			<div class="fs " id="logo-hold">
+			</div>
+			<div class="fs " id="cookies-hold">
+			</div>
+
+
+		</div>
+			<div id="outline"></div>
+			<a href="javascript:void(window.open(window.clickTag))">
+				<div class="fs" id="click-catch"></div>
+			</a>
+			<a href="javascript:void(window.open(window.clickTag))">
+				<div id="click-over1"></div>
+				<div id="click-over2"></div>
+			</a>
+		</div>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+		<script type="text/javascript">
+//elems
+var initFadeInDur = 0.5;
+var bgColor = document.getElementById("bg-color");
+var headline = document.getElementById("headline");
+var headlineHold = document.getElementById("headline-hold");
+var ctasHold = document.getElementById("ctas-hold");
+var cta1Hold = document.getElementById("cta1-hold");
+var cta2Hold = document.getElementById("cta2-hold");
+var cta1 = document.getElementById("cta1");
+var cta1Over = document.getElementById("cta1-over");
+var cta2 = document.getElementById("cta2");
+var cta2Over = document.getElementById("cta2-over");
+var logo = document.getElementById("logo");
+var logoHold = document.getElementById("logo-hold");
+var cookiesHold = document.getElementById("cookies-hold");
+
+//size data
+var sizeData = {"clickPos1":{"x":733,"y":30,"width":170,"height":51},"clickPos2":{"x":733,"y":89,"width":170,"height":51},"cookiePos":{"width":326,"height":320,"ox":0,"oy":-660,"durMult":1.5,"type":"vertical","pos":[200,600,400,80,620,100,500,300,800,200,20,400]}};
+
+var defaultForce3D=!1,needsFrameTick=!0,lineInDur=1,lineStagger=.1,frameDelay=1,lineInEase=Power4.easeOut,clickOver1=document.getElementById("click-over1"),clickOver2=document.getElementById("click-over2"),numCookies=12,headlineReset=!1,cookiePivots=[],cookies=[];function initGFX(){var e,o,t;for("horizontal"==sizeData.cookiePos.type&&tw.set(ctasHold,{width:0}),tw.set(clickOver1,{position:"absolute",x:sizeData.clickPos1.x,y:sizeData.clickPos1.y,width:sizeData.clickPos1.width,height:sizeData.clickPos1.height,backgroundColor:"cyan",opacity:0}),tw.set(clickOver2,{position:"absolute",x:sizeData.clickPos2.x,y:sizeData.clickPos2.y,width:sizeData.clickPos2.width,height:sizeData.clickPos2.height,backgroundColor:"cyan",opacity:0}),ctasHold.appendChild(cta1Hold),ctasHold.appendChild(cta2Hold),cta1Hold.appendChild(cta1),cta1Hold.appendChild(cta1Over),cta2Hold.appendChild(cta2),cta2Hold.appendChild(cta2Over),tw.set(cta1Over,{autoAlpha:0}),tw.set(cta2Over,{autoAlpha:0}),headlineHold.appendChild(headline),logoHold.appendChild(logo),e=0;e<numCookies;e++)pos=sizeData.cookiePos,(t=document.createElement("div")).className="fs cookie",tw.set(t,{overflow:"visible",transformOrigin:"50% 50%",rotation:0,width:.5*sizeData.cookiePos.width,height:.5*sizeData.cookiePos.height,filter:"drop-shadow(4px 4px 4px rgba(0,0,0,0.4))"}),"300x250"!=sizeType&&"160x600"!=sizeType&&"320x480"!=sizeType||tw.set(t,{scale:.8}),cookies.push(t),(o=document.createElement("div")).id="cookie-pivot"+e,o.className="fs",cookiesHold.appendChild(o),o.appendChild(t),"horizontal"==pos.type?tw.set(o,{overflow:"visible",left:.6*-sizeData.cookiePos.width,top:pos.pos[e],x:0,y:0,width:.5*sizeData.cookiePos.width,height:.5*sizeData.cookiePos.height,filter:"drop-shadow(4px 4px 4px rgba(0,0,0,0.4))"}):tw.set(o,{overflow:"visible",left:pos.pos[e],top:sh+.75*sizeData.cookiePos.height,x:pos.ox,y:pos.oy,width:.5*sizeData.cookiePos.width,height:.5*sizeData.cookiePos.height,filter:"drop-shadow(4px 4px 4px rgba(0,0,0,0.4))"}),cookiePivots.push(o),(3<e&&"320x50"==sizeType||3<e&&"728x90"==sizeType)&&tw.set(t,{display:"none"})}function activateRollover(){var e=.3;clickOver1.onmouseover=function(){tw.to(cta1,e,{autoAlpha:0,ease:Power1.easeIn}),tw.to(cta1Over,e,{autoAlpha:1,ease:Power1.easeOut})},clickOver1.onmouseout=function(){tw.to(cta1Over,e,{autoAlpha:0,ease:Power1.easeIn}),tw.to(cta1,e,{autoAlpha:1,ease:Power1.easeOut})},clickOver2.onmouseover=function(){tw.to(cta2,e,{autoAlpha:0,ease:Power1.easeIn}),tw.to(cta2Over,e,{autoAlpha:1,ease:Power1.easeOut})},clickOver2.onmouseout=function(){tw.to(cta2Over,e,{autoAlpha:0,ease:Power1.easeIn}),tw.to(cta2,e,{autoAlpha:1,ease:Power1.easeOut})}}function doFrameTick(){var e;if("728x90"==sizeType||"320x50"==sizeType){var o=-80;"320x50"==sizeType&&(o=-30),headlineReset?(e=cookiePivots[3]._gsTransform.x+o,tw.set(headlineHold,{width:e}),tw.set(ctasHold,{x:e}),tw.set(cta1Hold,{x:-e}),tw.set(cta2Hold,{x:-e})):(e=cookiePivots[2]._gsTransform.x+o,tw.set(headlineHold,{x:e}),tw.set(headline,{x:-e}),e=cookiePivots[2]._gsTransform.x+o,tw.set(ctasHold,{width:e}))}}function resetHeadline(){headlineReset=!0,tw.set(headlineHold,{x:0,width:0}),tw.set(headline,{x:0})}function doAnimation(){var e=new TimelineMax;e.add(activateRollover);var o,t,a,i=.2;"320x50"==sizeType&&(i=1.6),e.add("cookie-in",i);var s=2.5*sizeData.cookiePos.durMult,n=0,c=1;for(o=0;o<numCookies;o++)t=o/(numCookies-1),"vertical"==sizeData.cookiePos.type?(a=s+Math.sin(12312.1234*t)*s*.2,e.to(cookies[o],a,{rotation:20*a,ease:Quad.easeIn},"cookie-in+="+o/numCookies*11),e.to(cookiePivots[o],a,{x:0,y:sw-40,ease:Quad.easeIn},"cookie-in+="+o/numCookies*11)):(a=s+Math.sin(12312.1234*t)*s*.18,1<o&&(n=3),2<o&&(n+=4.5),c=1.55,"320x50"==sizeType&&(c=2),e.add(resetHeadline,10.5),e.to(cookies[o],a,{rotation:120*a*c,ease:Linear.easeNone},"cookie-in+="+(o/numCookies*11+n)),e.to(cookiePivots[o],a,{x:sw+sizeData.cookiePos.width,ease:Linear.easeNone},"cookie-in+="+(o/numCookies*11+n)));e.add(endBanner,15)}function endBanner(){bannerEnd=!0,console.log("15s")}var fract=function(e){return e-Math.floor(e)};function seededRand(e){return clamp(fract(123123*Math.sin(e)),0,1)}var rndBetween=function(e,o){return e+(o-e)*Math.random()},lerp=function(e,o,t){return(1-t)*e+t*o},clamp=function(e,o,t){return Math.max(Math.min(e,t),o)},mapRange=function(e,o,t,a,i){return a+(i-a)*(e-o)/(t-o)},mapRangeClamped=function(e,o,t,a,i){return clamp(mapRange(e,o,t,a,i),a,i)};function normalizedSin(e){return(Math.sin(e)+1)/2}var len=function(e,o,t,a){var i=e-t,s=o-a;return Math.hypot(i,s)};Math.hypot||(Math.hypot=function(){for(var e=0,o=0,t=!1,a=0;a<arguments.length;++a){var i=Math.abs(Number(arguments[a]));i===1/0&&(t=!0),e<i&&(o*=e/i*(e/i),e=i),o+=0===i&&0===e?0:i/e*(i/e)}return t?1/0:e===1/0?1/0:e*Math.sqrt(o)});var createCanvas=function(e,o,t,a){e.canvas=document.createElement("canvas"),e.ctx=e.canvas.getContext("2d"),e.width=t,e.height=a,e.canvas.width=t,e.canvas.height=a,e.canvas.className="fs",e.canvas.style.width=t/2+"px",e.canvas.style.height=a/2+"px",o.appendChild(e.canvas)};
+//
+var tw;
+var main = this;
+var bannerContain = document.getElementById("banner");
+var clickCatch = document.getElementById("click-catch");
+//time
+var i;
+var timeFromStart = 0;
+var prevTime = 0;
+var currentTime = 0;
+var deltaTime = 0;
+//state
+var bannerEnd = false;
+//init
+window.onload = function() {
+	//references
+	tw = TweenLite;
+	//defualts
+	CSSPlugin.defaultForce3D = defaultForce3D;
+	//reset elements
+	initGFX();
+	//start
+	tw.delayedCall(0.02, begin);
+}
+function begin(){
+	//show banner
+	tw.to(bannerContain, initFadeInDur, {opacity: 1, ease: Linear.eaesNone});
+	//time
+	currentTime = tw.ticker.time;
+	if(needsFrameTick){
+		tw.ticker.addEventListener("tick", frameTick, this, true, 1);
+	}
+	//animation sequence
+	tw.delayedCall(15, function(){
+		bannerEnd = true;
+	});
+	doAnimation();
+}
+function frameTick(event){
+	//time
+	prevTime = currentTime;
+	currentTime = tw.ticker.time;
+	deltaTime = (currentTime - prevTime);
+	timeFromStart += deltaTime;
+	doFrameTick();
+}
+function print(obj){
+	console.log(obj);
+}
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+		<title>Weight Watchers</title>
+		<meta name="ad.size" content="width=160,height=600" />
+		<script>
+			var clickTag = "http://www.google.com";
+			
+			var sw = 160;
+			var sh = 600;
+			var sizeType = sw + "x" + sh;
+
+			var concept = "counter";
+
+		</script>
+		<style>
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+		html, html a {
+			font-smooth: always;
+			-webkit-font-smoothing: antialiased;
+		}
+		* {
+			-webkit-tap-highlight-color: transparent;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+		}
+		#banner {
+			position: relative;
+			width: 160px;
+			height: 600px;
+			overflow: hidden;
+			opacity: 0;
+		}
+		.fs {
+			position: absolute;
+			background-size: 100% 100%;
+			width: 160px;
+			height: 600px;
+			overflow: hidden;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+		}
+		#outline {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 158px;
+			height: 598px;
+			border: 1px #666 solid;
+		}
+		#bg {
+			background-color: #322da0;
+		}
+
+		#img {
+			background-image: url(img.jpg);
+		}
+		#color-over {
+			background-image: url(color-over.png);
+		}
+		#cta {
+			background-image: url(cta.png);
+		}
+		#cta-over {
+			background-image: url(cta-over.png);
+		}
+		#logo {
+			background-image: url(logo.png);
+		}
+		#headline1_1 {
+			background-image: url(headline1_1.png);
+		}
+		#headline1_2 {
+			background-image: url(headline1_2.png);
+		}
+		#headline1_3 {
+			background-image: url(headline1_3.png);
+		}
+		#headline1_4 {
+			background-image: url(headline1_4.png);
+		}
+		#headline2_1 {
+			background-image: url(headline2_1.png);
+		}
+
+
+		</style>
+	</head>
+	<body>
+		<div id="banner">
+		<div id="banner-main">
+			<div class="fs" id="bg"></div>
+
+			<div class="fs " id="img"></div>
+			<div class="fs " id="color-over"></div>
+			<div class="fs " id="headline-hold">
+				<div class="fs headline headline1" id="headline1_1"></div>
+				<div class="fs headline headline1" id="headline1_2"></div>
+				<div class="fs headline headline1" id="headline1_3"></div>
+				<div class="fs headline headline1" id="headline1_4"></div>
+				<div class="fs headline headline2" id="headline2_1"></div>
+			</div>
+			<div class="fs " id="cta-hold">
+			</div>
+			<div class="fs " id="cta"></div>
+			<div class="fs " id="cta-over"></div>
+			<div class="fs " id="logo"></div>
+
+
+		</div>
+			<div id="outline"></div>
+			<a href="javascript:void(window.open(window.clickTag))">
+				<div class="fs" id="click-catch"></div>
+			</a>
+			<a href="javascript:void(window.open(window.clickTag))">
+				<div id="click-over1"></div>
+				<div id="click-over2"></div>
+			</a>
+		</div>
+		<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+		<script type="text/javascript">
+//elems
+var initFadeInDur = 0.5;
+var img = document.getElementById("img");
+var colorOver = document.getElementById("color-over");
+var headlineHold = document.getElementById("headline-hold");
+var ctaHold = document.getElementById("cta-hold");
+var cta = document.getElementById("cta");
+var ctaOver = document.getElementById("cta-over");
+var logo = document.getElementById("logo");
+var headline1_1 = document.getElementById("headline1_1");
+var headline1_2 = document.getElementById("headline1_2");
+var headline1_3 = document.getElementById("headline1_3");
+var headline1_4 = document.getElementById("headline1_4");
+var headline2_1 = document.getElementById("headline2_1");
+
+//size data
+var sizeData = {"clickPos":{"x":20,"y":544,"width":121,"height":36},"imgPos":{"width":310,"height":600,"start":{"x":-20,"y":0},"end":{"x":-150,"y":0}}};
+
+var defaultForce3D=!1,needsFrameTick=!0,lineInDur=1,lineStagger=.1,frameDelay=1,lineInEase=Power4.easeOut,clickOver=document.getElementById("click-over1");function initGFX(){tw.set(clickOver,{position:"absolute",x:sizeData.clickPos.x,y:sizeData.clickPos.y,width:sizeData.clickPos.width,height:sizeData.clickPos.height,backgroundColor:"cyan",opacity:0}),ctaHold.appendChild(cta),ctaHold.appendChild(ctaOver),tw.set(ctaOver,{autoAlpha:0}),tw.set(ctaHold,{autoAlpha:0}),"728x90"!=sizeType&&"970x250"!=sizeType&&"320x50"!=sizeType&&tw.set(logo,{autoAlpha:0}),tw.set(".headline",{autoAlpha:0,y:10}),tw.set(img,{width:sizeData.imgPos.width,height:sizeData.imgPos.height,x:sizeData.imgPos.start.x,y:sizeData.imgPos.start.y})}function activateRollover(){clickOver.onmouseover=function(){tw.to(cta,.3,{autoAlpha:0,ease:Power1.easeIn}),tw.to(ctaOver,.3,{autoAlpha:1,ease:Power1.easeOut})},clickOver.onmouseout=function(){tw.to(ctaOver,.3,{autoAlpha:0,ease:Power1.easeIn}),tw.to(cta,.3,{autoAlpha:1,ease:Power1.easeOut})}}function doFrameTick(){}function doAnimation(){activateRollover();var e=new TimelineMax;e.add("headline1",.4),e.to(headline1_1,1,{autoAlpha:1,y:0,ease:Power4.easeOut},"headline1"),e.to(headline1_2,1,{autoAlpha:1,y:0,ease:Power4.easeOut},"headline1"),"320x50"!=sizeType&&e.to(ctaHold,1,{autoAlpha:1,y:0,ease:Power4.easeOut},"-=0.6"),e.to(headline1_2,.4,{autoAlpha:0,y:0,ease:Power1.easeIn},"+=1"),e.to(headline1_3,1,{autoAlpha:1,y:0,ease:Power4.easeOut}),e.to(headline1_3,.4,{autoAlpha:0,y:0,ease:Power1.easeIn},"+=1"),e.to(headline1_4,1,{autoAlpha:1,y:0,ease:Power4.easeOut}),e.add("end","+=1"),e.to(headline1_4,.4,{autoAlpha:0,y:0,ease:Power1.easeIn},"end"),e.to(headline1_1,.4,{autoAlpha:0,y:0,ease:Power1.easeIn},"end"),e.to(headline2_1,2,{autoAlpha:1,y:0,ease:Power4.easeOut}),"320x50"==sizeType&&(e.to(headline2_1,.5,{autoAlpha:0,y:0,ease:Power4.easeIn},"+=1.5"),e.to(ctaHold,1,{autoAlpha:1,y:0,ease:Power4.easeOut})),e.add("img-end",e.duration()-1);var a=Quad.easeOut;"160x600"==sizeType&&(a=Quad.easeInOut),e.to(img,e.duration(),{x:sizeData.imgPos.end.x,y:sizeData.imgPos.end.y,ease:a},0)}function endBanner(){bannerEnd=!0,console.log("15s")}var fract=function(e){return e-Math.floor(e)};function seededRand(e){return clamp(fract(123123*Math.sin(e)),0,1)}var rndBetween=function(e,a){return e+(a-e)*Math.random()},lerp=function(e,a,t){return(1-t)*e+t*a},clamp=function(e,a,t){return Math.max(Math.min(e,t),a)},mapRange=function(e,a,t,n,o){return n+(o-n)*(e-a)/(t-a)},mapRangeClamped=function(e,a,t,n,o){return clamp(mapRange(e,a,t,n,o),n,o)};function normalizedSin(e){return(Math.sin(e)+1)/2}var len=function(e,a,t,n){var o=e-t,i=a-n;return Math.hypot(o,i)};Math.hypot||(Math.hypot=function(){for(var e=0,a=0,t=!1,n=0;n<arguments.length;++n){var o=Math.abs(Number(arguments[n]));o===1/0&&(t=!0),e<o&&(a*=e/o*(e/o),e=o),a+=0===o&&0===e?0:o/e*(o/e)}return t?1/0:e===1/0?1/0:e*Math.sqrt(a)});var createCanvas=function(e,a,t,n){e.canvas=document.createElement("canvas"),e.ctx=e.canvas.getContext("2d"),e.width=t,e.height=n,e.canvas.width=t,e.canvas.height=n,e.canvas.className="fs",e.canvas.style.width=t/2+"px",e.canvas.style.height=n/2+"px",a.appendChild(e.canvas)};
+//
+var tw;
+var main = this;
+var bannerContain = document.getElementById("banner");
+var clickCatch = document.getElementById("click-catch");
+//time
+var i;
+var timeFromStart = 0;
+var prevTime = 0;
+var currentTime = 0;
+var deltaTime = 0;
+//state
+var bannerEnd = false;
+//init
+window.onload = function() {
+	//references
+	tw = TweenLite;
+	//defualts
+	CSSPlugin.defaultForce3D = defaultForce3D;
+	//reset elements
+	initGFX();
+	//start
+	tw.delayedCall(0.02, begin);
+}
+function begin(){
+	//show banner
+	tw.to(bannerContain, initFadeInDur, {opacity: 1, ease: Linear.eaesNone});
+	//time
+	currentTime = tw.ticker.time;
+	if(needsFrameTick){
+		tw.ticker.addEventListener("tick", frameTick, this, true, 1);
+	}
+	//animation sequence
+	tw.delayedCall(15, function(){
+		bannerEnd = true;
+	});
+	doAnimation();
+}
+function frameTick(event){
+	//time
+	prevTime = currentTime;
+	currentTime = tw.ticker.time;
+	deltaTime = (currentTime - prevTime);
+	timeFromStart += deltaTime;
+	doFrameTick();
+}
+function print(obj){
+	console.log(obj);
+}
+
+		</script>
+	</body>
+</html>
