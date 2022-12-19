@@ -218,6 +218,8 @@ $(function() {
 
 
 	function getAssetHTML(assetType, assetWidth, assetHeight, assetLink) {
+
+		assetLink += "/index.html";
 		var assetHTML = "";
 
 		if (assetType == "swf") {
